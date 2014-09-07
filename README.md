@@ -8,7 +8,7 @@ A octopress plugin to propagate latest blog title and url to LinkedIn timeline.
 
 Example:
 
-{% img sharesample.png %}
+![Image of Sample](sharesample.png)
 
 ## How
 
