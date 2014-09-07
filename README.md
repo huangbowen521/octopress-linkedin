@@ -25,19 +25,19 @@ user_secret: YOUR_USER_SECRET
 
 ```
 
-**note**: Please don't check in `_custom\linkedin_config.yml` to your source control management tool, since there is sensitive data in it.
+	**note**: Please don't check in `_custom\linkedin_config.yml` to your source control management tool, since there is sensitive data in it.
 
 3. Add the task below to your Rakefile:
 
-```ruby
+	```ruby
 
-desc "Post the title and url of latest blog to LinkedIn"
-task :linkedin do
-  puts "Post the title and url of latest blog to LinkedIn"
-  system "ruby _custom/post_linkedin.rb"
-end
+	desc "Post the title and url of latest blog to LinkedIn"
+	task :linkedin do
+	  puts "Post the title and url of latest blog to LinkedIn"
+	  system "ruby _custom/post_linkedin.rb"
+	end
 
-```
+	```
 
 4. add `gem oauth` in your Gemfile and run `bundle install`.
 
