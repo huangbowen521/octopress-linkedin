@@ -12,9 +12,9 @@ Example:
 
 ## How
 
-1. Clone this repo and copy _custom folder and the files in it to your octopress root path.
+* Clone this repo and copy _custom folder and the files in it to your octopress root path.
 
-2. [Register an application](https://www.linkedin.com/secure/developer?newapp=) in LinkedIn. After the registration, you can get api_key, api_secret, user_token, user_secret infromation in the application details page, fill them in `_custom\linkedin_config.yml` file.
+* [Register an application](https://www.linkedin.com/secure/developer?newapp=) in LinkedIn. After the registration, you can get api_key, api_secret, user_token, user_secret infromation in the application details page, fill them in `_custom\linkedin_config.yml` file.
 
 ```text
 
@@ -25,23 +25,23 @@ user_secret: YOUR_USER_SECRET
 
 ```
 
-	**note**: Please don't check in `_custom\linkedin_config.yml` to your source control management tool, since there is sensitive data in it.
+**note**: Please don't check in `_custom\linkedin_config.yml` to your source control management tool, since there is sensitive data in it.
 
-3. Add the task below to your Rakefile:
+* Add the task below to your Rakefile:
 
-	```ruby
+```ruby
 
-	desc "Post the title and url of latest blog to LinkedIn"
-	task :linkedin do
-	  puts "Post the title and url of latest blog to LinkedIn"
-	  system "ruby _custom/post_linkedin.rb"
-	end
+desc "Post the title and url of latest blog to LinkedIn"
+task :linkedin do
+  puts "Post the title and url of latest blog to LinkedIn"
+  system "ruby _custom/post_linkedin.rb"
+end
 
-	```
+```
 
-4. add `gem oauth` in your Gemfile and run `bundle install`.
+* add `gem oauth` in your Gemfile and run `bundle install`.
 
-5. type `rake linkedin` in command line to post your latest blog title and url to your LinkedIn timeline.
+* type `rake linkedin` in command line to post your latest blog title and url to your LinkedIn timeline.
 
 You can customize the content by modifying `_custom\linkedin.xml` file. You can find further explain in [LinkedIn Share API](https://developer.linkedin.com/documents/share-api#toggleview:id=xml). 
 
