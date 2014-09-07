@@ -16,7 +16,7 @@ Example:
 
 2. [Register an application](https://www.linkedin.com/secure/developer?newapp=) in LinkedIn. After the registration, you can get api_key, api_secret, user_token, user_secret infromation in the application details page, fill them in `_custom\linkedin_config.yml` file.
 
-```text _custom\linkedin_config.yml
+```text
 
 api_key: YOUR_API_KEY
 api_secret: YOUR_API_SECRET
