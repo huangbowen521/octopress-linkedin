@@ -1,0 +1,11 @@
+<share>
+  <comment>Please view my new blog!</comment>
+  <content>
+    <title>%{blog_title}</title>
+    <description>My personal website: huangbowen.net</description>
+    <submitted-url>%{blog_url}</submitted-url>
+  </content>
+  <visibility> 
+    <code>anyone</code> 
+  </visibility>
+</share>
