@@ -6,6 +6,8 @@ octopress-linkedin
 
 A octopress plugin to propagate latest blog title and url to LinkedIn timeline.
 
+中文介绍请参见: [http://www.huangbowen.net/blog/2014/09/07/share-latest-post-to-linkedin/](http://www.huangbowen.net/blog/2014/09/07/share-latest-post-to-linkedin/)
+
 Example:
 
 ![Image of Sample](sharesample.png)
