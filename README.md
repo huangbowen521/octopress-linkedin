@@ -12,13 +12,11 @@ Example:
 
 ## How
 
-1. Clone this repo and copy _custom folder and the files in it to your octopress path.
+1. Clone this repo and copy _custom folder and the files in it to your octopress root path.
 
 2. [Register an application](https://www.linkedin.com/secure/developer?newapp=) in LinkedIn. After the registration, you can get api_key, api_secret, user_token, user_secret infromation in the application details page, fill them in `_custom\linkedin_config.yml` file.
 
-**note**: Please don't check in `_custom\linkedin_config.yml` to your source control management tool, since there is sensitive data in it.
-
-```yaml _custom\linkedin_config.yml
+```bash _custom\linkedin_config.yml
 
 api_key: YOUR_API_KEY
 api_secret: YOUR_API_SECRET
@@ -26,6 +24,8 @@ user_token: YOUR_USER_TOKEN
 user_secret: YOUR_USER_SECRET
 
 ```
+
+**note**: Please don't check in `_custom\linkedin_config.yml` to your source control management tool, since there is sensitive data in it.
 
 3. Add the task below to your Rakefile:
 
@@ -45,9 +45,6 @@ end
 
 You can customize the content by modifying `_custom\linkedin.xml` file. You can find further explain in [LinkedIn Share API](https://developer.linkedin.com/documents/share-api#toggleview:id=xml). 
 
-Wht
-
-Just for fun.
 
 
 
